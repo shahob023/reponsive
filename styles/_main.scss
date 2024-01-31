@@ -1,0 +1,112 @@
+main {
+  background-image: url("../images/bg-weather.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 806px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  .left {
+    margin-top: 37px;
+    &__weather {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      position: absolute;
+      bottom: 85px;
+      h1 {
+        color: #fff;
+        font-size: 143px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -11.44px;
+      }
+      p {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: normal;
+      }
+      span {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .right {
+    position: absolute;
+    right: 0;
+    width: 526px;
+    height: 100%;
+    border-left: 5px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(9.5px);
+    &__container {
+      form {
+        display: flex;
+        align-items: center;
+        width: 371px;
+        gap: 166px;
+        border-bottom: 1px solid #fff;
+        margin-top: 54px;
+        margin-bottom: 41px;
+      }
+      #search {
+        background: transparent;
+        border: none;
+        width: 160px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 13px;
+      }
+      #search:focus {
+        outline: none;
+      }
+      .weather_title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 40px;
+      }
+      ul {
+        width: 354px;
+        .list_item {
+          color: #fff;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+        }
+        .list_items {
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            .right_list{
+                display: flex;
+                gap: 26px;
+            }
+          .temp {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+      .div{
+        width: 371px;
+        height: 56px;
+        border-bottom: 1px solid #FFF;
+        margin-bottom: 41px;
+      }
+    }
+  }
+}
